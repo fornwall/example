@@ -8,4 +8,4 @@ jobs:
     - uses: actions/checkout@v2
     - uses: hecrj/setup-rust-action@v1
     - run: cargo install flamegraph
-    - run: sudo flamegraph ls
+    - run: sudo $(which flamegraph) ls
